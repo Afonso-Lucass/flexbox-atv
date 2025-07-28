@@ -35,3 +35,111 @@
 
 /* NÃO ALTERE DAQUI PRA CIMA */
 /* ESCREVA SEU CÓDIGO ABAIXO */
+.layout-blocos {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 80vh;
+  margin-top: 20px;
+  gap: 0px; 
+}
+
+.bloco {
+  width: 120px; 
+  background-color: #888;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+
+.layout2 {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu content ads"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 400px 100px; 
+  gap: 0;
+  margin-top: 40px;
+}
+
+
+.layout2 header {
+  grid-area: header;
+  background: #666;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.layout2 .menu {
+  grid-area: menu;
+  background: #aaa;
+  padding: 10px;
+}
+.layout2 .menu h2 {
+  margin-bottom: 10px;
+}
+.layout2 .menu button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+.layout2 .content {
+  grid-area: content;
+  background: #bbb;
+  padding: 10px;
+}
+.layout2 .ads {
+  grid-area: ads;
+  background: #ccc;
+  padding: 10px;
+}
+.layout2 footer {
+  grid-area: footer;
+  background: #666;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.layout3 {
+  display: grid;
+  grid-template-areas:
+    "cabecalho cabecalho menu"
+    "artigo1 artigo2 menu"
+    "rodape rodape rodape";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 120px; 
+  gap: 0;
+  margin-top: 40px;
+}
+
+.layout3 header {
+  grid-area: cabecalho;
+  background: #bbb;
+  padding: 10px;
+}
+.layout3 nav {
+  grid-area: menu;
+  background: #888;
+  padding: 10px;
+}
+.layout3 .artigo1 {
+  grid-area: artigo1;
+  background: #aaa;
+  padding: 10px;
+}
+.layout3 .artigo2 {
+  grid-area: artigo2;
+  background: #999;
+  padding: 10px;
+}
+.layout3 footer {
+  grid-area: rodape;
+  background: #666;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
